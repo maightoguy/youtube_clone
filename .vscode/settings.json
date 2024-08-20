@@ -1,6 +1,8 @@
 {
-  "cSpell.words": [
-    "Esports",
-    "Ondemand"
+  "cSpell.words": ["Esports", "Ondemand"],
+  "cSpell.ignoreWords": [
+    "RHRP",
+    "jsnf",
+    "rapidapi"
   ]
 }
