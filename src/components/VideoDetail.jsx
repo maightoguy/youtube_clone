@@ -35,7 +35,7 @@ const VideoDetail = () => {
         <Box flex="1">
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
             <ReactPlayer
-              url={`noembed.com/embed?url=https://www.youtube.com/get_video_info?video_id=${id}&html5=1&c=TVHTML5&cver=6.20180913`}
+              url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"
               controls
             />
