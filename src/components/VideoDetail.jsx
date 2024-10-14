@@ -14,9 +14,9 @@ const VideoDetail = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromApi(`/videos?part=snippet,statistics&id=${id}`).then((data) =>
-      setVideoDetail(data.items[0])
-    );
+    fetchFromApi(
+      `/videos?part=contentDetails,snippet,statistics&id=${id}`
+    ).then((data) => setVideoDetail(data.items[0]));
     fetchFromApi(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
       (data) => setVideos(data.items)
     );
@@ -35,7 +35,7 @@ const VideoDetail = () => {
         <Box flex="1">
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
             <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${id}`}
+              url={`https://noembed.com/embed?url=https://www.youtube.com/watch?v=${id}`}
               className="react-player"
               controls
             />
